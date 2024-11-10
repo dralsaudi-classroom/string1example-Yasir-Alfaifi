@@ -3,7 +3,7 @@ package com.example.project;
 public class String1 {
 	private char[] str;
 	private int size;
-
+zzzz
 	public String1 () {
 	   size = -1;
 	   str = new char[80];
