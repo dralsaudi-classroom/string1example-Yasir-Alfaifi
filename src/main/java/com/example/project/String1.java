@@ -3,7 +3,7 @@ package com.example.project;
 public class String1 {
 	private char[] str;
 	private int size;
-zzzz
+
 	public String1 () {
 	   size = -1;
 	   str = new char[80];
@@ -29,10 +29,22 @@ zzzz
         for(int i = 0; i < s.length(); i++)
             append(s.getChar(i));
     }
-    public boolean equal(String1 s) {
+   public boolean equal(String1 s) {
+        if (this.length() != s.length()) {
+            return false;
+        }
+        for (int i = 0; i <= size; i++) {
+            if (this.getChar(i) != s.getChar(i)) {
+                return false;
+            }
+        }
         return true;
     }
     public void reverse() {
-        throw new UnsupportedOperationException("reverse() function is not supported yet.");
-    }
+        for (int i = 0; i < length() / 2; i++) {
+            char temp = str[i];
+            str[i] = str[size - i];
+            str[size - i] = temp;
+        }}
 }
+    
